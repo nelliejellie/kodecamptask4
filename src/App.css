@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.card-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10%;
+  padding-top: 5vh;
+  padding-left: 5vw;
+}
+.container{
+  padding: 10px;
+  width: 15vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width:1024px){
+  .card-container{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .container{
+    padding: 10px;
+    width: 20vw;
   }
-  to {
-    transform: rotate(360deg);
+ 
+}
+
+@media screen and (max-width:780px){
+  .card-container{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
   }
+
+  .container{
+    padding: 10px;
+    width: 30vw;
+  }
+ 
+}
+
+@media screen and (max-width:480px){
+  .card-container{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+  }
+
+  .container{
+    padding: 10px;
+    width: 43vw;
+  }
+ 
 }
